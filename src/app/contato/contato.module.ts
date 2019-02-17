@@ -1,17 +1,17 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {ContatoComponent} from './contato.component';
-import {RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { ContatoRoutingModule } from './contato-routing.module';
+import { ContatoComponent } from './contato.component';
 
 @NgModule({
+  imports: [
+    CommonModule,
+    ContatoRoutingModule,
+  ],
   declarations: [
     ContatoComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild([
-      { path: 'contato', component: ContatoComponent }
-    ])
-  ]
+  exports: [ ContatoComponent ]
 })
-export class ContatoModule { }
+export class ContatoModule {
+}
