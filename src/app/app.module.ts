@@ -10,19 +10,19 @@ import { ContatoModule } from './contato/contato.module';
 import { AppRoutingModule } from './app-routing.module';
 import {NossaVisaoModule} from './nossa-visao/nossa-visao.module';
 import {QuemSomosModule} from './quem-somos/quem-somos.module';
-import { GiphySearchManualComponent } from './giphy/giphy-search-manual/giphy-search-manual.component';
+import {GiphySearchManualComponentModule} from './giphy/giphy-search-manual/giphy-search-manual.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GiphySearchManualComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ContatoModule,
     NossaVisaoModule,
-    QuemSomosModule
+    QuemSomosModule,
+    GiphySearchManualComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
