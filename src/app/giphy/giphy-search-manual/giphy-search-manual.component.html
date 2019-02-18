@@ -1,11 +1,11 @@
 <label for="qtdeGif" style="margin-right: 20px" >Qtde de gifs:</label>
-<input id="qtdeGif" type="number">
+<input id="qtdeGif" type="number" >
 <br />
 <br />
 <label for="termo" style="margin-right: 20px" >Termo:</label>
-<input id="termo" type="text">
+<input id="termo" type="text" (keyup.enter)="pesquisarGiphy()" >
 <br />
 <br />
-<input type="button" value="Pesquisar" >
+<input type="button" value="Pesquisar" (click)="pesquisarGiphy()" >
 
 <br />
