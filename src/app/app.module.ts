@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {NossaVisaoModule} from './nossa-visao/nossa-visao.module';
 import {QuemSomosModule} from './quem-somos/quem-somos.module';
 import {GiphySearchManualComponentModule} from './giphy/giphy-search-manual/giphy-search-manual.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {GiphySearchManualComponentModule} from './giphy/giphy-search-manual/giph
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     ContatoModule,
     NossaVisaoModule,
     QuemSomosModule,

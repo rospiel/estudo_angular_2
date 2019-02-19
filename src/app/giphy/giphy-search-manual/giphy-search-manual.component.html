@@ -1,11 +1,15 @@
 <label for="qtdeGif" style="margin-right: 20px" >Qtde de gifs:</label>
-<input id="qtdeGif" type="number" >
+<input id="qtdeGif" type="number" [(ngModel)]="qtdeGif" >
 <br />
 <br />
 <label for="termo" style="margin-right: 20px" >Termo:</label>
-<input id="termo" type="text" (keyup.enter)="pesquisarGiphy()" >
+<input id="termo" type="text" (keyup.enter)="pesquisarGiphy()" [(ngModel)]="termo" >
 <br />
 <br />
 <input type="button" value="Pesquisar" (click)="pesquisarGiphy()" >
 
 <br />
+
+<a *ngFor="let gif of gifs" >
+  <img src="http://i.giphy.com/{{gif.id}}.gif" title="imagem {{gif.id}}" >
+</a>
