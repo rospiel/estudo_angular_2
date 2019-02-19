@@ -10,6 +10,5 @@
 
 <br />
 
-<a *ngFor="let gif of gifs" >
-  <img src="http://i.giphy.com/{{gif.id}}.gif" title="imagem {{gif.id}}" >
-</a>
+<app-giphy-search-list [listaGifs]="gifs" ></app-giphy-search-list>
+
